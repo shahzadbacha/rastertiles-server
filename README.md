@@ -30,6 +30,26 @@
   cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTS=ON
   </pre>
   
+  #### Mapnik
+  <pre>
+  # stable branch: 2.3.x
+  git clone https://github.com/mapnik/mapnik -b 2.3.x
+  cd mapnik
+  ./configure
+  make
+  make test
+  sudo make install
+  cd ../
+  </pre>
+  
+  #### Tilemill
+  <pre>
+  git clone https://github.com/mapbox/tilemill.git
+  cd tilemill
+  npm install
+  </pre>
+  
   ### Get Data
   The easiest place to obtain OSM data is Geofabrik (http://download.geofabrik.de/), whch is updated on daily basis. Select your continent and then your country of interest, to download data. OR you can get it simply through a command; </br>
   <pre> wget download.geofabrik.de/pakistan-latest.osm.pbf</pre>
+
